@@ -101,6 +101,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.node_name = "dockerhost"
     chef.add_recipe "docker"
     chef.add_recipe "chef-dk"
+    chef.add_recipe "git"
 
   end
 
